@@ -1,4 +1,6 @@
 /*DADOS TESTES!!!*/
+/*Uso do banco de dados*/
+USE `bookShop_BD`;
 
 /*cadastros de endereço*/
 INSERT INTO `endereco` (`rua`, `bairro`, `numero`, `cidade`, `cep`, `complemento`, `uf`) VALUES
@@ -58,14 +60,14 @@ INSERT INTO `funcionario` (`nome`, `cpf`, `senha`, `administrador`, `vendedor`, 
 ('Pedro', '11122233344', 'admin123', 1, 0, 0), 
 ('Luisa', '55566677788', 'venda456', 0, 1, 0); 
 
+/*Cadastro encomenda*/
+INSERT INTO `encomenda` (`codigo`) VALUES
+(NULL); 
+
 /*Cadastro venda*/
 INSERT INTO `venda` (`id_Comprador`, `data`, `valor`, `forma_Pagamento`, `codigo_Encomenda`) VALUES
 (1, '2025-12-10', 165.40, 'Cartão de Crédito', NULL), 
 (2, '2025-12-11', 120.99, 'Boleto', 1); 
-
-/*Cadastro encomenda*/
-INSERT INTO `encomenda` (`codigo`) VALUES
-(NULL); 
 
 /*Relação livro genero*/
 INSERT INTO `livro_Generos` (`id_Livro`, `id_Genero`) VALUES

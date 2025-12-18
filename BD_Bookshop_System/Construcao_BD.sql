@@ -1,6 +1,6 @@
 /*Criação e habilitação de uso do BD*/
-CREATE DATABASE IF NOT EXISTS `livraria_BD`;
-USE `livraria_BD`;
+CREATE DATABASE IF NOT EXISTS `bookShop_BD`;
+USE `bookShop_BD`;
 
 /*Criação de tabelas*/
 
